@@ -1,3 +1,14 @@
+# **Project Overview**
+
+### **Objective**
+
+The objective of this project is to analyze various factors influencing student academic performance, including study habits, parental involvement, school type, and tutoring sessions. The goal is to identify trends and insights that can help improve educational outcomes and guide decision-making for educators and school administrators.
+
+### **Context**
+
+This dataset provides detailed information on students' study habits, parental involvement, and other key factors that can influence academic success. By analyzing this data, schools and educators can better understand the impact of these variables on student outcomes. This analysis can highlight areas where intervention may be needed, such as increased tutoring or support for students with low parental involvement, and ultimately improve student success rates.
+
+
 SELECT *
 FROM student_performance 
 
