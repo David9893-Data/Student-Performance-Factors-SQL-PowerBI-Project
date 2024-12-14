@@ -1,3 +1,63 @@
+-- Objective
+-- The objective of this project is to analyze various factors influencing student academic performance, including study habits, parental involvement, school type, and tutoring sessions. The goal is to identify trends and insights that can help improve educational outcomes and guide decision-making for educators and school administrators.
+
+-- Context
+-- This dataset provides detailed information on students' study habits, parental involvement, and other key factors that can influence academic success. By analysing this data, schools and educators can better understand the impact of these variables on student outcomes. This analysis can highlight areas where intervention may be needed, such as increased tutoring or support for students with low parental involvement, and ultimately improve student success rates.
+
+### **1. Database Setup**
+
+-- Database Creation**: The project starts by creating a database named `student_performance_db`.
+-- Table Creation**: A table named `student_performance` is created to store data related to student performance. The table structure includes columns for student ID, hours studied, attendance percentage, parental involvement, and other key factors affecting academic success.
+
+CREATE DATABASE student_performance_db;
+
+CREATE TABLE student_performance (
+    student_id INT PRIMARY KEY,
+    hours_studied INT,
+    attendance INT,
+    parental_involvement VARCHAR(20),
+    access_to_resources VARCHAR(20),
+    extracurricular_activities VARCHAR(5),
+    sleep_hours INT,
+    previous_scores INT,
+    motivation_level VARCHAR(10),
+    internet_access VARCHAR(5),
+    tutoring_sessions INT,
+    family_income VARCHAR(10),
+    teacher_quality VARCHAR(10),
+    school_type VARCHAR(10),
+    peer_influence VARCHAR(10),
+    physical_activity INT,
+    learning_disabilities VARCHAR(5),
+    parental_education_level VARCHAR(20),
+    distance_from_home VARCHAR(10),
+    gender VARCHAR(10),
+    exam_score INT
+);
+
+
+-- ### **2. Data Exploration & Cleaning**
+
+-- Record Count**: Determine the total number of records in the dataset.
+-- Unique Schools**: Find out how many unique schools are represented in the dataset.
+-- Parental Involvement Levels**: Identify all unique levels of parental involvement in the dataset.
+-- Null Value Check**: Check for any null values in the dataset and delete records with missing data.
+
+-- Record Count
+SELECT COUNT(*) FROM student_performance;
+
+-- Unique Schools (assuming we have a school table or similar)
+SELECT COUNT(DISTINCT school_id) FROM school_info;
+
+-- Parental Involvement Levels
+SELECT DISTINCT parental_involvement FROM student_performance;
+
+-- Null Value Check
+SELECT * FROM student_performance WHERE hours_studied IS NULL;
+
+
+
+
 SELECT *
 FROM student_performance 
 
