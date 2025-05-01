@@ -1,79 +1,99 @@
-# Student Performance Factors SQL Project
+# Student Performance Factors SQL & Power BI Project
 
 ## Overview
-This project explores the various factors influencing student performance using SQL. By analyzing the dataset, we aim to identify trends, correlations, and insights that can provide valuable information to improve student outcomes.
-The project involves data cleaning, transformation, and querying techniques to derive actionable insights
 
+This project explores the various factors influencing student performance using SQL and Power BI.  
+By analyzing the dataset, we aim to identify trends, correlations, and insights that can provide valuable information to improve student outcomes.  
+The project involves data cleaning, transformation, querying, and interactive data visualization.
 
 ## Objective
-- **The primary objective of this project is to analyze student performance data to uncover key factors contributing to their academic success or failure. The analysis focuses on:**
+
+- **The primary objective of this project is to analyze student performance data to uncover key factors contributing to their academic success or difficulty. The analysis focuses on:**
 
 - **Identifying trends and patterns in student performance.**
 
-- **Analyzing the impact of various factors such as gender, parental education, and test preparation.**
+- **Analyzing the impact of various factors such as gender, family income, parental education, and motivation.**
 
-- **Providing recommendations for improving student outcomes based on insights.**
+- **Providing actionable insights to help improve academic support strategies.**
 
 ---
 
 ## Dataset
 
--- The dataset used for this analysis contains anonymized data on student performance. Key fields include:
+The dataset used for this analysis contains anonymized data on student performance. Key fields include:
 
-- **Gender: Male/Female.**
-
-- **Parental Level of Education: Highest level of education completed by the student’s parents.**
-
-- **Test Preparation Course: Whether the student completed a test preparation course.**
-
-- **Scores: Scores in different subjects (Math, Reading, and Writing).**
-
---- 
-
-## Tools and Technologies
-
-- **SQL: For data analysis, cleaning, and querying.**
-
-- **MySQL: Database management system used for storing and querying the dataset.**
-
-- **GitHub: Repository to store and showcase the project.**
+- **Gender**  
+- **Family_Income**  
+- **Parental_Education_Level**  
+- **Access_to_Resources & Internet_Access**  
+- **Hours_Studied, Sleep_Hours, Tutoring_Sessions**  
+- **Motivation_Level, Extracurricular_Activities**  
+- **School_Type, Teacher_Quality, Peer_Influence**  
+- **Exam_Score** (target variable)
 
 ---
 
-## 3. Data Analysis
+## Tools and Technologies
+
+- **SQL (Microsoft SQL Server)** – Data cleaning, filtering, and analysis  
+- **Power BI** – Interactive dashboard creation and insights visualization  
+- **GitHub** – Project hosting and version control  
+
+---
+
+## Data Analysis (SQL Work)
 
 - **Descriptive Analysis:**
+  - Average Exam Scores by Gender
+  - Study Hours and Sleep Distribution
+  - Resource Access and Internet Connectivity Stats
 
-- **Average scores by gender.**
+- **Comparative Analysis:**
+  - Exam Score differences by Motivation_Level
+  - Score by Family_Income and Access_to_Resources
+  - Correlation between Parental Education and Performance
 
-- **Distribution of scores across parental education levels.**
+- **Filtering & Grouping Techniques:**
+  - `GROUP BY`, `CASE WHEN`, and `JOIN` used to build grouped summaries
+  - Used `AVG()`, `COUNT()`, and `SUM()` to generate aggregated insights
 
-- **Comparative Analysis:- **
+---
 
-- **Comparison of scores between students who completed test preparation and those who did not.**
+## Power BI Dashboard
 
-- **Analysis of subject-wise performance trends.**
+To visualize the SQL insights interactively, a single-page Power BI dashboard was created.  
+It highlights the most influential factors on Exam Score and provides a clear, segmented view across student profiles.
 
-- **Correlations:- **
+### Main KPIs displayed:
+- **Average Exam Score**
+- **% of Students in Extracurricular Activities**
+- **% of Students with Internet Access**
+- **Average Study Hours**
 
-- **Relationship between parental education level and student performance.**
+### Key Visualizations:
+- **Exam Score by Family Income and Resource Access**
+- **Score by Motivation Level and Gender**
+- **Parental Education Level vs Average Score**
+- **Sleep Hours by Distance from Home and Gender**
+- **School Type & Teacher Quality vs Exam Score**
+- **Extracurricular Participation by Income Level**
 
-- **Impact of gender on scores.**
+---
 
---- 
+## Key Insights
 
-## 4. Insights
+- Students with **high motivation** perform significantly better than others.
+- **Internet Access** and **Parental Involvement** are strongly linked to higher scores.
+- The **quality of teachers** and **type of school** impact performance, especially when combined.
+- **Students far from school** tend to sleep less, especially males, which may impact results.
+- **Extracurricular activities** are more common among students with medium or high family income.
 
-Key insights derived include:
+---
 
-Students who completed test preparation courses tend to score higher across all subjects.
+## Conclusion
 
-Parental education level positively correlates with student performance.
+The combination of SQL and Power BI provided a clear view of the factors influencing student performance.  
+These insights can support educational stakeholders in designing targeted interventions, improving outcomes, and closing performance gaps.
 
-Female students showed a slight edge in reading and writing scores, while male students excelled in math.
 
-
-## Results
-
-The project demonstrates the effectiveness of SQL for analyzing structured datasets and deriving actionable insights. It highlights the importance of external factors such as test preparation and parental education in shaping student performance.
 
