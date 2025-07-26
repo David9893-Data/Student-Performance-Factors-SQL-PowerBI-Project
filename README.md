@@ -1,99 +1,54 @@
-# Student Performance Factors SQL & Power BI Project
+# 🎓 Student Performance – Dashboard Case Study
 
-## Overview
+## Context  
+Education plays a crucial role in shaping future opportunities, but many factors outside the classroom can influence academic outcomes.  
+This project aimed to understand how socio-economic background, motivation, parental education, and lifestyle habits impact student exam performance.
 
-This project explores the various factors influencing student performance using SQL and Power BI.  
-By analyzing the dataset, we aim to identify trends, correlations, and insights that can provide valuable information to improve student outcomes.  
-The project involves data cleaning, transformation, querying, and interactive data visualization.
-
-## Objective
-
-- **The primary objective of this project is to analyze student performance data to uncover key factors contributing to their academic success or difficulty. The analysis focuses on:**
-
-- **Identifying trends and patterns in student performance.**
-
-- **Analyzing the impact of various factors such as gender, family income, parental education, and motivation.**
-
-- **Providing actionable insights to help improve academic support strategies.**
+The dataset includes variables such as exam scores, study hours, motivation level, access to internet, family income, parental education level, and more.  
+The goal was to uncover key insights and provide recommendations to support students more effectively.
 
 ---
 
-## Dataset
+## 📊 Key Insights
 
-The dataset used for this analysis contains anonymized data on student performance. Key fields include:
+- **Medium-income students performed best**  
+  They showed higher exam scores compared to both low- and high-income groups.
 
-- **Gender**  
-- **Family_Income**  
-- **Parental_Education_Level**  
-- **Access_to_Resources & Internet_Access**  
-- **Hours_Studied, Sleep_Hours, Tutoring_Sessions**  
-- **Motivation_Level, Extracurricular_Activities**  
-- **School_Type, Teacher_Quality, Peer_Influence**  
-- **Exam_Score** (target variable)
+- **Lack of resources limits low-income students**  
+  Students with low access to resources performed significantly worse.
 
----
+- **Extracurricular activities correlate with better results**  
+  60% of students participated, and they generally performed better across all income groups.
 
-## Tools and Technologies
+- **Long commute = less sleep = lower performance**  
+  Students living far from school had drastically reduced sleep hours.
 
-- **SQL (Microsoft SQL Server)** – Data cleaning, filtering, and analysis  
-- **Power BI** – Interactive dashboard creation and insights visualization  
-- **GitHub** – Project hosting and version control  
+- **Motivation drives success**  
+  Highly motivated students had higher exam scores. Females performed slightly better in this group.
 
----
+- **Parental education makes a difference**  
+  Students whose parents had postgraduate degrees performed slightly better.
 
-## Data Analysis (SQL Work)
-
-- **Descriptive Analysis:**
-  - Average Exam Scores by Gender
-  - Study Hours and Sleep Distribution
-  - Resource Access and Internet Connectivity Stats
-
-- **Comparative Analysis:**
-  - Exam Score differences by Motivation_Level
-  - Score by Family_Income and Access_to_Resources
-  - Correlation between Parental Education and Performance
-
-- **Filtering & Grouping Techniques:**
-  - `GROUP BY`, `CASE WHEN`, and `JOIN` used to build grouped summaries
-  - Used `AVG()`, `COUNT()`, and `SUM()` to generate aggregated insights
+- **School type matters less than teacher quality**  
+  Public and private school scores were similar. High teacher quality had more impact.
 
 ---
 
-## Power BI Dashboard
+## ✅ Recommendations
 
-To visualize the SQL insights interactively, a single-page Power BI dashboard was created.  
-It highlights the most influential factors on Exam Score and provides a clear, segmented view across student profiles.
-
-### Main KPIs displayed:
-- **Average Exam Score**
-- **% of Students in Extracurricular Activities**
-- **% of Students with Internet Access**
-- **Average Study Hours**
-
-### Key Visualizations:
-- **Exam Score by Family Income and Resource Access**
-- **Score by Motivation Level and Gender**
-- **Parental Education Level vs Average Score**
-- **Sleep Hours by Distance from Home and Gender**
-- **School Type & Teacher Quality vs Exam Score**
-- **Extracurricular Participation by Income Level**
+- Provide **academic support and learning resources** to students from low-income backgrounds  
+- Promote **extracurricular participation** as a means to improve engagement and performance  
+- Reduce **commute-related fatigue** with better transportation options or local housing programs  
+- Focus on **teacher quality and training** rather than school type  
+- Encourage and **develop student motivation** through coaching or mentoring programs
 
 ---
 
-## Key Insights
+For inquiries or feedback, please contact: merilusdavid@gmail.com
 
-- Students with **high motivation** perform significantly better than others.
-- **Internet Access** and **Parental Involvement** are strongly linked to higher scores.
-- The **quality of teachers** and **type of school** impact performance, especially when combined.
-- **Students far from school** tend to sleep less, especially males, which may impact results.
-- **Extracurricular activities** are more common among students with medium or high family income.
+## 📁 Dataset  
+Available on Kaggle: [Student Performance Factors](https://www.kaggle.com/datasets/lainguyn123/student-performance-factors)
 
----
-
-## Conclusion
-
-The combination of SQL and Power BI provided a clear view of the factors influencing student performance.  
-These insights can support educational stakeholders in designing targeted interventions, improving outcomes, and closing performance gaps.
 
 
 
